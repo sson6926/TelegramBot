@@ -1,6 +1,6 @@
 import requests
 
-VIOTP_API_KEY = '4737b2d378624a90a303752b3122c679'
+VIOTP_API_KEY = none
 
 class Viotp:
     def __init__(self, id_service) -> None:
