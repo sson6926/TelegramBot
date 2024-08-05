@@ -34,11 +34,3 @@ async def getSXMB():
             return json.dumps({"status": 200, "date": date, "data": {"giai_dac_biet": g_db, "giai_1": g_1, "giai_2": g_2, "giai_3": g_3, "giai_4": g_4, "giai_5": g_5, "giai_6": g_6, "giai_7": g_7}})
     except Exception as e:
         return json.dumps({"status": 400, "msg": "could not fetch data", "error": str(e)})
-
-
-async def main():
-    result = await getSXMB()
-    print(result)
-
-if __name__ == "__main__":
-    asyncio.run(main())
