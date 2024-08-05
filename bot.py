@@ -2,10 +2,8 @@ import os
 import json
 from telegram import Update, Bot
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
-# from utils.viotp import Viotp
-from message_template import messageXSMB
 
-from handlers.command_handers import xs
+from handlers.commands.xsmb_bot import xs;
 
 
 async def hello(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
